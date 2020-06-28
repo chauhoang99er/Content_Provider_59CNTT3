@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ChooseFragment"
+    android:paddingLeft="13dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Từ ngày:"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:id="@+id/edttungay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:enabled="false"
+            android:textColor="#3F51B5"
+            />
+
+        <ImageView
+            android:id="@+id/imvtungay"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_calendar" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đến ngày:"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:id="@+id/edtdenngay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:enabled="false"
+            android:textColor="#3F51B5"
+            />
+
+        <ImageView
+            android:id="@+id/imvdenngay"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_calendar" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imBtnhienthi"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_action_emit"
+        android:layout_marginTop="20px"/>
+</LinearLayout>
